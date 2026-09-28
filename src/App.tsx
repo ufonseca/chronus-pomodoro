@@ -2,18 +2,22 @@
 // HeaderHeading - App.tsx
 // ExceploDeNomeDeComponente
 
-import { Heading } from "./components/Heading";
-import "./styles/global.css";
 import "./styles/theme.css";
+import "./styles/global.css";
+import { Container } from "./components/Container/";
+import { Heading } from "./components/Heading";
 
 export function App() {
   return (
-    <div>
-     <Heading />
-      <p>
-        Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor
-        sit amet
-      </p>
-    </div>
+    <>
+      <Container>
+        <Heading>Testando meu componente de heading</Heading>
+        <Heading>LOGO</Heading>
+      </Container>
+
+      <Container>
+        <Heading>MENU</Heading>
+      </Container>
+    </>
   );
 }
